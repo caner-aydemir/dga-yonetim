@@ -1,10 +1,18 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist_Mono } from "next/font/google"
+import { Geist_Mono, Instrument_Serif } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
+
+const instrumentSerif = Instrument_Serif({
+  subsets: ["latin", "latin-ext"],
+  weight: "400",
+  style: ["normal", "italic"],
+  variable: "--font-instrument-serif",
+  display: "swap",
+})
 
 export const metadata: Metadata = {
   title: {
@@ -39,7 +47,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="tr">
+    <html lang="tr" className={instrumentSerif.variable}>
       <body className="font-sans antialiased">
         {children}
         <Analytics />

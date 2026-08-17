@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react"
 import { ArrowDown } from "lucide-react"
+import { SectionLabel } from "./section-label"
 
 export function Hero() {
   const contentRef = useRef<HTMLDivElement>(null)
@@ -124,7 +125,9 @@ export function Hero() {
         }}
       >
         <div className="mb-40 md:mb-48 lg:mb-56">
-          <p className="text-sm tracking-[0.3em] uppercase text-center text-white/80 mb-4">Tesis Yönetimi</p>
+          <SectionLabel align="center" onDark className="mb-5">
+            Tesis Yönetimi
+          </SectionLabel>
 
           <h1
             ref={titleRef}
