@@ -1,5 +1,7 @@
 import Link from "next/link"
 import { company } from "@/lib/data"
+import { WhatsAppIcon } from "./whatsapp-icon"
+import { Logo } from "./logo"
 
 export function Footer() {
   return (
@@ -7,17 +9,17 @@ export function Footer() {
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid md:grid-cols-4 gap-12 mb-16">
           <div className="md:col-span-2">
-            <Link href="/" className="inline-flex items-center gap-3 mb-6">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <rect x="1.5" y="10" width="5.5" height="12.5" fill="currentColor" />
-                <rect x="9.25" y="2" width="5.5" height="20.5" fill="currentColor" />
-                <rect x="17" y="7" width="5.5" height="15.5" fill="currentColor" />
-              </svg>
-              <span className="text-sm tracking-[0.28em] font-medium">DGA YÖNETİM</span>
+            <Link href="/" className="inline-flex items-center mb-6">
+              <Logo className="h-12 w-auto text-foreground" />
             </Link>
-            <p className="text-muted-foreground leading-relaxed max-w-sm">
+            <p className="text-muted-foreground leading-relaxed max-w-sm mb-5">
               Biz tesis yönetmiyoruz; bir yaşam sahnesi kurguluyoruz. Ofis, konut, villa ve AVM projelerinde kuruluştan
               işletmeye sessiz, yüksek standartlı tesis yönetimi.
+            </p>
+            <p className="text-sm text-muted-foreground leading-relaxed max-w-sm">
+              <span className="text-foreground font-medium">{company.legalName}</span>
+              <br />
+              {company.address}
             </p>
           </div>
 
@@ -40,11 +42,6 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/#references" className="hover:text-foreground transition-colors">
-                  Referanslar
-                </Link>
-              </li>
-              <li>
                 <Link href="/#contact" className="hover:text-foreground transition-colors">
                   İletişim
                 </Link>
@@ -62,12 +59,33 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href={company.linkedin}
+                  href={company.whatsapp}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 hover:text-foreground transition-colors"
+                >
+                  <WhatsAppIcon className="w-4 h-4" />
+                  Whatsapp ile iletişim
+                </a>
+              </li>
+              <li>
+                <a
+                  href={company.instagram}
                   target="_blank"
                   rel="noreferrer"
                   className="hover:text-foreground transition-colors"
                 >
-                  LinkedIn
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a
+                  href={company.twitter}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-foreground transition-colors"
+                >
+                  X
                 </a>
               </li>
             </ul>

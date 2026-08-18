@@ -20,10 +20,17 @@ export type Project = {
 
 export const company = {
   name: "DGA YÖNETİM",
-  legalName: "DGA Yönetim",
+  legalName: "DGA Tesis Yönetimi ve Danışmanlık Limited Şirketi",
   tagline: "Kusursuz Yönetim, Sessiz Operasyon.",
-  email: "info@dgayonetim.com",
-  linkedin: "https://www.linkedin.com",
+  email: "info@dgayonetim.com.tr",
+  phone: "+90 507 540 51 73",
+  phoneHref: "tel:+905075405173",
+  whatsapp: "https://wa.me/905075405173",
+  instagram: "https://instagram.com/dgayonetim",
+  twitter: "https://x.com/dgayonetim",
+  website: "https://www.dgayonetim.com.tr",
+  address:
+    "İnkılap Mah. Dr. Adnan Büyükdeniz Caddesi Akkom 2. Blok Cessas Plaza No:4 Kat:10 Ümraniye İstanbul",
 }
 
 export const navItems = [
@@ -31,7 +38,6 @@ export const navItems = [
   { label: "Farkımız", href: "/#about", homeHref: "#about" },
   { label: "Hizmetler", href: "/#services", homeHref: "#services" },
   { label: "Projeler", href: "/projeler", homeHref: "#projects" },
-  { label: "Referanslar", href: "/#references", homeHref: "#references" },
 ]
 
 export const projects: Project[] = [
@@ -254,40 +260,79 @@ export const projects: Project[] = [
     ],
     hasDetail: true,
   },
-]
-
-export const additionalReferences: Project[] = [
   {
     slug: "karat-34",
     title: "Karat 34",
-    category: "Karma Proje",
-    location: "İstanbul",
-    year: "Referans",
+    category: "Karma Yaşam",
+    location: "Bahçelievler, İstanbul",
+    year: "",
     cover: "/images/projects/karat/hero.jpg",
-    gallery: ["/images/projects/karat/hero.jpg"],
-    excerpt: "Tesis yönetimi yapılanmasının kurulduğu prestijli karma yaşam projesi.",
-    description: [],
-    stats: [],
-    highlights: [],
-    hasDetail: false,
+    gallery: [
+      "/images/projects/karat/hero.jpg",
+      "/images/projects/karat/03.jpg",
+      "/images/projects/karat/04.jpg",
+      "/images/projects/karat/05.jpg",
+    ],
+    excerpt:
+      "Bahçelievler’de ofis ve rezidansı bir arada tutan prestijli karma yaşam. Kuruluştan işletmeye kurgulanan bir düzen.",
+    description: [
+      "Emlak Konut GYO güvencesiyle Doğa Şehircilik ve Başyapı tarafından inşa edilen Karat 34, İstanbul’da iş ve yaşam akışının kesiştiği bir noktada; ofis ve rezidanslardan oluşan prestijli bir karma yaşam projesidir. Atatürk Havalimanı’nın yanı başında, E5, metro ve metrobüs bağlantısıyla konumlanır.",
+      "21.438 m² alanda 3’ü ofis, 3’ü rezidans olmak üzere 6 blok yükselir. 112.964 m² inşaat, 28.285 m² konut alanı ve 441 konut; 28,58 m²’den 267,10 m²’ye uzanan tipolojilerle hem yatırım hem yaşam için kurgulanmıştır. Ticari bloklar, LEED Gold yeşil bina sertifikasına adaydır.",
+      "DGA Yönetim bu ölçekte ofis ve konutun aynı sahneyi paylaştığı bir yapıda tesis yönetimi organizasyonunu kurdu; yönetim planını hazırladı ve operasyonu devreye aldı. Ortak alanlar, sosyal tesis ve teknik süreklilik; işin ve evin ritmini bozmadan yürür.",
+    ],
+    stats: [
+      { label: "Konum", value: "Bahçelievler / İstanbul" },
+      { label: "İnşaat Alanı", value: "112.964 m²" },
+      { label: "Konut Alanı", value: "28.285 m²" },
+      { label: "Konut Adedi", value: "441" },
+      { label: "Konut Büyüklükleri", value: "28,58 – 267,10 m²" },
+      { label: "Yapı", value: "6 blok · 3 ofis · 3 rezidans" },
+    ],
+    highlights: [
+      "Ofis + rezidans karma işletme",
+      "Yönetim planı ve kuruluş organizasyonu",
+      "Ortak alan ve sosyal tesis standardı",
+      "Teknik süreklilik ve sessiz operasyon",
+    ],
+    hasDetail: true,
   },
   {
     slug: "platform-merter",
     title: "Platform Merter",
-    category: "Ticari",
+    category: "Lüks Rezidans",
     location: "Merter, İstanbul",
-    year: "Referans",
+    year: "",
     cover: "/images/projects/platform-merter/hero.jpg",
-    gallery: ["/images/projects/platform-merter/hero.jpg"],
-    excerpt: "İşletmeye alma ve operasyon süreçlerinde görev alınan ticari yaşam projesi.",
-    description: [],
-    stats: [],
-    highlights: [],
-    hasDetail: false,
+    gallery: [
+      "/images/projects/platform-merter/hero.jpg",
+      "/images/projects/platform-merter/03.jpg",
+      "/images/projects/platform-merter/04.jpg",
+      "/images/projects/platform-merter/05.jpg",
+    ],
+    excerpt:
+      "Merter’de 323 konutluk lüks rezidans. Akıllı ev, wellness ve butik perakendeyi aynı standartta yöneten bir sahne.",
+    description: [
+      "İstanbul’un yenilenen merkezlerinden Merter’de yükselen Platform Merter, ailesi için farklı, güvenli ve lüks bir yaşam arayanlara özel tasarlandı. 142.300 m² inşaat alanında 323 konut; 80 m²’den 500 m²’ye uzanan metrekareleriyle rezidans ezberini bozar.",
+      "Akıllı ev sistemi, kat bahçeleri, Wellness Spa Center, buhar odası, Türk hamamı, sauna, yüzme havuzu ve fitness; sosyal alanların hemen yanında mağazalarla tamamlanır. Bu kadar katmanın tek ritimde işlemesi, görünmez bir işletme disiplini ister.",
+      "DGA Yönetim, işletmeye alma ve saha organizasyonunda aynı yüksek standardı uygular: teknik süreklilik, prestiji koruyan ortak alan düzeni ve sakin deneyimini bozmayan sessiz operasyon.",
+    ],
+    stats: [
+      { label: "Konum", value: "Merter / İstanbul" },
+      { label: "İnşaat Alanı", value: "142.300 m²" },
+      { label: "Konut Alanı", value: "27.600 m²" },
+      { label: "Konut Adedi", value: "323" },
+      { label: "Konut Büyüklükleri", value: "80 – 500 m²" },
+      { label: "Karakter", value: "Lüks rezidans + sosyal tesis" },
+    ],
+    highlights: [
+      "Lüks rezidans işletme standardı",
+      "Wellness, havuz ve sosyal tesis yönetimi",
+      "Akıllı ev altyapısıyla entegre saha",
+      "Konut + ticari karma operasyon",
+    ],
+    hasDetail: true,
   },
 ]
-
-export const allReferences = [...projects, ...additionalReferences]
 
 export const featuredProjects = projects
 

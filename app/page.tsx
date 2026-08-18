@@ -4,7 +4,6 @@ import { Philosophy } from "@/components/philosophy"
 import { QuoteBanner } from "@/components/quote-banner"
 import { Projects } from "@/components/projects"
 import { Expertise } from "@/components/expertise"
-import { References } from "@/components/references"
 import { FAQ } from "@/components/faq"
 import { CallToAction } from "@/components/call-to-action"
 import { Footer } from "@/components/footer"
@@ -18,7 +17,6 @@ export default function Home() {
       <QuoteBanner />
       <Projects />
       <Expertise />
-      <References />
       <FAQ />
       <CallToAction />
       <Footer />

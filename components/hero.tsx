@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from "react"
 import { ArrowDown } from "lucide-react"
-import { SectionLabel } from "./section-label"
 
 export function Hero() {
   const contentRef = useRef<HTMLDivElement>(null)
@@ -14,6 +13,12 @@ export function Hero() {
   const lastTouchY = useRef<number>(0)
 
   useEffect(() => {
+    const isMobile = window.matchMedia("(max-width: 768px)").matches
+    if (isMobile) {
+      setAnimationComplete(true)
+      return
+    }
+
     const applyTransform = (progress: number) => {
       if (contentRef.current) {
         const translateY = progress * 200
@@ -125,10 +130,6 @@ export function Hero() {
         }}
       >
         <div className="mb-40 md:mb-48 lg:mb-56">
-          <SectionLabel align="center" onDark className="mb-5">
-            Tesis Yönetimi
-          </SectionLabel>
-
           <h1
             ref={titleRef}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium text-balance text-center text-white mb-0 tracking-tight leading-[0.95]"

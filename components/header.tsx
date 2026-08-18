@@ -7,6 +7,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
 import { navItems } from "@/lib/data"
+import { Logo } from "./logo"
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false)
@@ -46,15 +47,8 @@ export function Header() {
       )}
     >
       <nav className="container mx-auto px-6 flex items-center justify-between md:px-[24]">
-        <Link href="/" className="flex items-center gap-3 group" onClick={scrollToTop}>
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="shrink-0">
-            <rect x="1.5" y="10" width="5.5" height="12.5" fill="#FFC981" />
-            <rect x="9.25" y="2" width="5.5" height="20.5" fill="#FFC981" />
-            <rect x="17" y="7" width="5.5" height="15.5" fill="#FFC981" />
-          </svg>
-          <span className="text-[#FFC981] text-xs sm:text-sm tracking-[0.18em] sm:tracking-[0.28em] font-medium whitespace-nowrap">
-            DGA YÖNETİM
-          </span>
+        <Link href="/" className="flex items-center group" onClick={scrollToTop}>
+          <Logo className="h-9 sm:h-11 w-auto text-white" />
         </Link>
 
         <ul className="hidden lg:flex items-center gap-8 text-sm tracking-wide">

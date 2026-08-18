@@ -4,7 +4,7 @@ import { ArrowUpRight } from "lucide-react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { CallToAction } from "@/components/call-to-action"
-import { featuredProjects } from "@/lib/data"
+import { featuredProjects, stats } from "@/lib/data"
 
 export const metadata: Metadata = {
   title: "Projeler",
@@ -19,14 +19,29 @@ export default function ProjectsPage() {
 
       <section className="relative pt-36 pb-16 md:pt-44 md:pb-20 bg-foreground text-primary-foreground">
         <div className="container mx-auto px-6 md:px-12">
-          <p className="text-primary-foreground/55 text-sm tracking-[0.3em] uppercase mb-6">Portföy</p>
+          <p className="text-primary-foreground/55 text-sm tracking-[0.3em] uppercase mb-6">Projeler</p>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-medium tracking-tight leading-[1.1] max-w-4xl text-balance">
-            Yönetimini üstlendiğimiz projeler
+            Prestijli projelerde kurulmuş düzen
           </h1>
           <p className="mt-6 text-primary-foreground/70 text-lg leading-relaxed max-w-2xl">
-            Kuruluş aşamasından işletme dönemine kadar; ofis kampüslerinden villa yaşamına, konut sitelerinden alışveriş
-            merkezlerine uzanan bir sahne.
+            İnşaat mühendisliği temelli 15 yılı aşkın deneyimle büyük ölçekli ofis, konut, AVM ve karma yaşam
+            projelerinde kuruluştan işletmeye uzmanlaştık. Akkom Ofis Park başta olmak üzere Pruva 34, Karat 34,
+            Platform Merter, Doğa Cadde AVM, Limonlu Bahçe Konakları ve Big Country gibi prestijli yapılarda tesis
+            yönetimi organizasyonunu kurduk; yönetim planlarını hazırladık ve operasyonu devreye aldık.
           </p>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-20 border-b border-border">
+        <div className="container mx-auto px-6 md:px-12">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+            {stats.map((item) => (
+              <div key={item.label}>
+                <p className="text-4xl md:text-5xl font-medium tracking-tight mb-3">{item.value}</p>
+                <p className="text-sm text-muted-foreground leading-relaxed">{item.label}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
