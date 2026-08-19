@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s · DGA Yönetim",
   },
   description:
-    "Biz tesis yönetmiyoruz; bir yaşam sahnesi kurguluyoruz. Ofis, konut, villa ve AVM projelerinde kuruluştan işletmeye yüksek standartlı tesis yönetimi.",
+    "Biz sadece tesis yönetmiyoruz; bir yaşam sahnesi kurguluyoruz. Ofis, konut, villa ve AVM projelerinde kuruluştan işletmeye yüksek standartlı tesis yönetimi.",
   generator: "v0.app",
   icons: {
     icon: [

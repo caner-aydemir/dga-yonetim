@@ -134,7 +134,7 @@ export function Hero() {
             ref={titleRef}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium text-balance text-center text-white mb-0 tracking-tight leading-[0.95]"
           >
-            Biz tesis yönetmiyoruz;
+            Biz sadece tesis yönetmiyoruz;
             <br />
             <span className="text-orange-200">bir yaşam sahnesi kurguluyoruz.</span>
           </h1>

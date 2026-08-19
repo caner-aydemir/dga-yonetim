@@ -13,7 +13,7 @@ export function Footer() {
               <Logo className="h-12 w-auto text-foreground" />
             </Link>
             <p className="text-muted-foreground leading-relaxed max-w-sm mb-5">
-              Biz tesis yönetmiyoruz; bir yaşam sahnesi kurguluyoruz. Ofis, konut, villa ve AVM projelerinde kuruluştan
+              Biz sadece tesis yönetmiyoruz; bir yaşam sahnesi kurguluyoruz. Ofis, konut, villa ve AVM projelerinde kuruluştan
               işletmeye sessiz, yüksek standartlı tesis yönetimi.
             </p>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-sm">
