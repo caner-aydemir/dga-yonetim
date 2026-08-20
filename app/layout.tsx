@@ -15,6 +15,7 @@ const instrumentSerif = Instrument_Serif({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://dgayonetim.com.tr"),
   title: {
     default: "DGA Yönetim — Kusursuz Yönetim, Sessiz Operasyon",
     template: "%s · DGA Yönetim",
@@ -22,6 +23,21 @@ export const metadata: Metadata = {
   description:
     "Biz sadece tesis yönetmiyoruz; bir yaşam sahnesi kurguluyoruz. Ofis, konut, villa ve AVM projelerinde kuruluştan işletmeye yüksek standartlı tesis yönetimi.",
   generator: "v0.app",
+  openGraph: {
+    type: "website",
+    locale: "tr_TR",
+    url: "https://dgayonetim.com.tr",
+    siteName: "DGA Yönetim",
+    title: "DGA Yönetim — Kusursuz Yönetim, Sessiz Operasyon",
+    description:
+      "Biz sadece tesis yönetmiyoruz; bir yaşam sahnesi kurguluyoruz. Ofis, konut, villa ve AVM projelerinde kuruluştan işletmeye yüksek standartlı tesis yönetimi.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "DGA Yönetim — Kusursuz Yönetim, Sessiz Operasyon",
+    description:
+      "Biz sadece tesis yönetmiyoruz; bir yaşam sahnesi kurguluyoruz. Ofis, konut, villa ve AVM projelerinde kuruluştan işletmeye yüksek standartlı tesis yönetimi.",
+  },
   icons: {
     icon: [
       {
